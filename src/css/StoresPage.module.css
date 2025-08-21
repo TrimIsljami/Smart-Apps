@@ -1,0 +1,99 @@
+.mapWrap {
+   position: fixed;
+   inset: 0;
+}
+
+.map {
+   width: 100%;
+   height: 100%;
+}
+
+.navOverlay {
+   position: fixed;
+   top: 12px;
+   right: 12px;
+   z-index: 1000;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+}
+
+.navBtn {
+   padding: 8px 12px;
+   border-radius: 8px;
+   border: 1px solid #ddd;
+   background: #fff;
+   font-weight: 600;
+   cursor: pointer;
+   font-size: 14px;
+}
+
+.popup,
+.tempPopup {
+   display: grid;
+   gap: 6px;
+   max-width: 90vw;
+}
+
+@media (min-width: 768px) {
+
+   .popup,
+   .tempPopup {
+      max-width: 300px;
+   }
+}
+
+.popupTitle {
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.popupCoords {
+   color: #666;
+   font-size: 12px;
+   word-break: break-word;
+}
+
+.delete {
+   padding: 4px 8px;
+   border-radius: 6px;
+   border: none;
+   background: #e53935;
+   color: white;
+   cursor: pointer;
+   font-size: 12px;
+}
+
+.input {
+   padding: 6px 8px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   font-size: 14px;
+   width: 100%;
+}
+
+.tempActions {
+   display: flex;
+   gap: 6px;
+   flex-wrap: wrap;
+}
+
+.save {
+   padding: 4px 8px;
+   border-radius: 6px;
+   border: none;
+   background: #2e7d32;
+   color: white;
+   cursor: pointer;
+   font-size: 12px;
+}
+
+.cancel {
+   padding: 4px 8px;
+   border-radius: 6px;
+   border: none;
+   background: #555;
+   color: white;
+   cursor: pointer;
+   font-size: 12px;
+}
